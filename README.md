@@ -1,5 +1,5 @@
-# speech_scoring_native
-Speech Scoring API for Native
+Link: https://drive.google.com/file/d/1D-NhsB29sFV_KWO1CeiVBJjpH_86kUvy/view?usp=sharing
+
 Hướng dẫn cài đặt:
 Môi trường cài đặt: Ubuntu 16.04 hoặc Centos 7, python3.6.5, pip3.6. Hiện tại dự án đang sử dụng Centos nên sẽ hướng dẫn cài trên Centos.  
 
