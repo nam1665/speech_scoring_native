@@ -7,23 +7,8 @@ Bước 1: Cài đặt ffmpeg, chạy lần lượt các lệnh sau:
 +) Đầu tiên cài đặt epel-release: yum -y install epel-release
 +) Cài đặt nux repo: rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm
 +) yum install ffmpeg ffmpeg-devel -y
-	Sau đó kiểm tra lại cài đặt: 
-# ffmpeg -version
-ffmpeg version 2.6.8 Copyright (c) 2000-2016 the FFmpeg developers
-built with gcc 4.8.5 (GCC) 20150623 (Red Hat 4.8.5-4)
-configuration: --prefix=/usr --bindir=/usr/bin --datadir=/usr/share/ffmpeg --incdir=/usr/include/ffmpeg --libdir=/usr/lib64 --mandir=/usr/share/man --arch=x86_64 --optflags='-O2 -g -pip3.6e -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic' --enable-bzlib --disable-crystalhd --enable-gnutls --enable-ladspa --enable-libass --enable-libcdio --enable-libdc1394 --enable-libfaac --enable-nonfree --enable-libfdk-aac --enable-nonfree --disable-indev=jack --enable-libfreetype --enable-libgsm --enable-libmp3lame --enable-openal --enable-libopenjpeg --enable-libopus --enable-libpulse --enable-libschroedinger --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libvorbis --enable-libv4l2 --enable-libx264 --enable-libx265 --enable-libxvid --enable-x11grab --enable-avfilter --enable-avresample --enable-postproc --enable-pthreads --disable-static --enable-shared --enable-gpl --disable-debug --disable-stripping --shlibdir=/usr/lib64 --enable-runtime-cpudetect
-libavutil 54. 20.100 / 54. 20.100
-libavcodec 56. 26.100 / 56. 26.100
-libavformat 56. 25.101 / 56. 25.101
-libavdevice 56. 4.100 / 56. 4.100
-libavfilter 5. 11.102 / 5. 11.102
-libavresample 2. 1. 0 / 2. 1. 0
-libswscale 3. 1.101 / 3. 1.101
-libswresample 1. 1.100 / 1. 1.100
-libpostproc 53. 3.100 / 53. 3.100
 
 Bước 2: Cài đặt flask và các libs sẽ sử dụng 
-
 Cài đặt python3:
 sudo yum install -y https://centos7.iuscommunity.org/ius-release.rpm
 sudo yum update
