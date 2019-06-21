@@ -68,9 +68,11 @@ export LANG=en_US.UTF-8 LANGUAGE=en_US.en LC_ALL=en_US.UTF-8
 	Do api đang chạy tại port 5000 nên cần cài đặt trong file config của nginx để trỏ domain api về port 5000. 
 Thêm block code này trong file config của domain api trong nginx.
 
+  
   location / {
+
     proxy_pass       http://localhost:5000;
     proxy_set_header Host      $host;
     proxy_set_header X-Real-IP $remote_addr;
-  }
+ }
 
