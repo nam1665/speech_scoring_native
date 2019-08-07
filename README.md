@@ -3,16 +3,24 @@ Link: https://drive.google.com/file/d/1D-NhsB29sFV_KWO1CeiVBJjpH_86kUvy/view?usp
 Hướng dẫn cài đặt:
 Môi trường cài đặt: Ubuntu 16.04 hoặc Centos 7, python3.6.5, pip3.6. Hiện tại dự án đang sử dụng Centos nên sẽ hướng dẫn cài trên Centos.  
 
-Bước 1: Cài đặt ffmpeg, chạy lần lượt các lệnh sau: 
+Bước 1: Cài đặt ffmpeg, chạy lần lượt các lệnh sau:
+
 +) Đầu tiên cài đặt epel-release: yum -y install epel-release
+
 +) Cài đặt nux repo: rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm
+
 +) yum install ffmpeg ffmpeg-devel -y
+
 
 Bước 2: Cài đặt flask và các libs sẽ sử dụng 
 Cài đặt python3:
+
 sudo yum install -y https://centos7.iuscommunity.org/ius-release.rpm
+
 sudo yum update
+
 sudo yum install -y python3u python3u-libs python3u-devel python3u-pip3
+
 
 Cài đặt nltk, lần lượt chạy các lệnh sau:
 pip3.6 install nltk
@@ -21,22 +29,33 @@ import nltk
 nltk.download('punkt')
 
 Lần lượt cài đặt các libs sau để sử dụng với python. 
-pip3.63.6install flask
+pip3.63.6install flask 
+
 pip3.63.6install werkzeug
+
 pip3.63.6install speech_recognition
+
 pip3.63.6install subprocess
+
 pip3.63.6install json
+
 pip3.63.6install difflib
+
 pip3.63.6install diff_match_patch
+
 pip3.63.6install nltk
+
 pip3.63.6install ftfy
+
 pip3.63.6install flask-mysql
+
 	
 
 Bước 3: Chạy API và cài đặt load balancing với nginx
 
 Chạy lệnh này từ termianl để chuyển về UTF8 là mặc định trước khi khởi chạy service từ Flask.
-export LANG=en_US.UTF-8 LANGUAGE=en_US.en LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8\
+LANGUAGE=en_US.en LC_ALL=en_US.UTF-8\
 PYTHONIOENCODING=utf-8 python3.6 server.py
 
 	Từ terminal, chạy lệnh “python" hoặc “python3” để kiểm tra chính xác xem version hiện tại đã là python3.6 hay chưa. 
