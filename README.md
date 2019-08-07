@@ -37,6 +37,7 @@ Bước 3: Chạy API và cài đặt load balancing với nginx
 
 Chạy lệnh này từ termianl để chuyển về UTF8 là mặc định trước khi khởi chạy service từ Flask.
 export LANG=en_US.UTF-8 LANGUAGE=en_US.en LC_ALL=en_US.UTF-8
+PYTHONIOENCODING=utf-8 python3.6 server.py
 
 	Từ terminal, chạy lệnh “python" hoặc “python3” để kiểm tra chính xác xem version hiện tại đã là python3.6 hay chưa. 
 	Nếu mặc định “python” version vẫn là 2.7, nếu thử “python3” mà không có thì tức là server chưa cài được phiên bản 3.6. Cần cài đặt lại. 
