@@ -28,6 +28,8 @@ python3.6
 import nltk
 nltk.download('punkt')
 
+nltk.download('averaged_perceptron_tagger')
+
 Lần lượt cài đặt các libs sau để sử dụng với python. 
 pip3.63.6install flask 
 
