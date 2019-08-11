@@ -28,17 +28,12 @@ PROJECT_HOME = os.path.dirname(os.path.realpath(__file__))
 UPLOAD_FOLDER = '{}/uploads/'.format(PROJECT_HOME)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-# test new mysql connect
-# app.config['MYSQL_DATABASE_USER'] = 'dev123'
-# app.config['MYSQL_DATABASE_PASSWORD'] = 'dbmoodle_test4_notfound'
-# app.config['MYSQL_DATABASE_DB'] = 'moodle_test4'
-# app.config['MYSQL_DATABASE_HOST'] = '58.187.9.254'
 
 #real database
-app.config['MYSQL_DATABASE_USER'] = 'toannv3'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'DJnguyen@820064'
+app.config['MYSQL_DATABASE_USER'] = ''
+app.config['MYSQL_DATABASE_PASSWORD'] = 'D'
 app.config['MYSQL_DATABASE_DB'] = 'moodle'
-app.config['MYSQL_DATABASE_HOST'] = '210.211.96.227'
+app.config['MYSQL_DATABASE_HOST'] = ''
 mysql2.init_app(app)
 
 
